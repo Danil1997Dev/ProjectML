@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Mon Apr  1 23:36:46 2024
-Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Analysis & Synthesis Status : Successful - Fri Jan 24 18:46:09 2025
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : projectML
-Top-level Entity Name : layer
+Top-level Entity Name : ff_network
 Family : Cyclone IV E
-Total logic elements : 148
-    Total combinational functions : 148
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 31
+Total logic elements : 17,565
+    Total combinational functions : 15,040
+    Dedicated logic registers : 5,228
+Total registers : 5228
+Total pins : 79
 Total virtual pins : 0
 Total memory bits : 0
-Embedded Multiplier 9-bit elements : 0
+Embedded Multiplier 9-bit elements : 32
 Total PLLs : 0
