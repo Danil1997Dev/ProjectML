@@ -5,7 +5,7 @@ module sigmoid #(parameter
   WIDTH_O = $clog2(RANGE) 
 )
 (
-  input [WIDTH_I-1:0]x,
+  input  [WIDTH_I-1:0]x,
   output [WIDTH_O-1:0]f
 );
   reg [WIDTH_O-1:0]sigm[0:RANGE-1];
