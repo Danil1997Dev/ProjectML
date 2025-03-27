@@ -1,74 +1,93 @@
 m255
 K4
 z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+!s11f MIXED_VERSIONS
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-dD:/verilogProject/projectML
+Z1 dD:/verilogProject/projectML
+T_opt
+!s110 1743079601
+VR9VoHn]A=Xeea<h:lR?XN2
+04 10 4 work network_tb fast 0
+=1-00583f12d345-67e548b0-345-2dfc
+!s124 OEM10U9 
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.3;73
+R1
 vff_network
-Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z1 !s110 1742818943
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z4 !s110 1743080096
 !i10b 1
-!s100 X[IoC1R:I:KMYz^k6CBNl0
-I?FNk1PjLWfL[V3W<RJ@mZ0
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-!s105 ff_network_sv_unit
+!s100 bJ8TK;_9jP@[0jP6FNHUD1
+If]G7EOVMhFmfD>`o:1Ah11
 S1
-Z3 dD:/verilogProject/projectML/projectML
-w1737379325
+Z5 dD:/IntelFPGA/project/projectML/projectML/projectML
+w1743075114
 8../projectML/ff_network.sv
 F../projectML/ff_network.sv
-L0 1
-Z4 OV;L;10.5b;63
+!i122 30
+L0 1 108
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2021.3;73
 r1
 !s85 0
 31
-Z5 !s108 1742818943.000000
+Z8 !s108 1743080096.000000
 !s107 ../projectML/ff_network.sv|
 !s90 -reportprogress|300|../projectML/ff_network.sv|
-!i113 1
-Z6 tCvgOpt 0
-vlayer
-R0
-R1
-!i10b 1
-!s100 5>XODe2NdnXb;d0HMUN520
-InNGZ5@_0e6E3k@Le;11?T0
+!i113 0
+Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R2
-!s105 layer_sv_unit
-S1
+vlayer
 R3
-w1737379997
+R4
+!i10b 1
+!s100 @dC5k0hKb9Xm90E96:IiB1
+IXWmQDbC[mI]WURl`zY1^Y0
+S1
+R5
+w1737365597
 8../projectML/layer.sv
 F../projectML/layer.sv
-L0 1
-R4
+!i122 29
+L0 1 72
+R6
+R7
 r1
 !s85 0
 31
-R5
+R8
 !s107 ../projectML/layer.sv|
 !s90 -reportprogress|300|../projectML/layer.sv|
-!i113 1
-R6
+!i113 0
+R9
+R2
 vlayer_tb
-R0
+Z10 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
 !s110 1737386437
 !i10b 1
 !s100 hcckN=UUQAIFcSifUOZCi3
 IW_Fb2BK_gSYfg9COER`Lb3
-R2
+R6
 !s105 layer_tb_sv_unit
 S1
-R3
+Z11 dD:/verilogProject/projectML/projectML
 w1737187544
 8../projectML/layer_tb.sv
 F../projectML/layer_tb.sv
 L0 3
-R4
+Z12 OV;L;10.5b;63
 r1
 !s85 0
 31
@@ -76,68 +95,70 @@ r1
 !s107 ../projectML/layer_tb.sv|
 !s90 -reportprogress|300|../projectML/layer_tb.sv|
 !i113 1
-R6
-vmanager
-R0
-!s110 1742818942
-!i10b 1
-!s100 T?lG[giF9mK1E_:aZ:EcH2
-IF_Uk^AB[NHR050fE[SHdA1
 R2
-!s105 manager_sv_unit
-S1
+vmanager
 R3
-w1742818937
+R4
+!i10b 1
+!s100 1]g>NN=OQML`C=OjZ[8R12
+IY15ZoD;mc]MU[HBTfN4@V3
+S1
+R5
+w1743079562
 8../projectML/manager.sv
 F../projectML/manager.sv
-L0 1
-R4
+!i122 28
+L0 1 371
+R6
+R7
 r1
 !s85 0
 31
-!s108 1742818942.000000
+R8
 !s107 ../projectML/manager.sv|
 !s90 -reportprogress|300|../projectML/manager.sv|
-!i113 1
-R6
-vnetwork_tb
-R0
-R1
-!i10b 1
-!s100 ZRgnSN?[i2@n]C>:g;j>22
-Ib`gj:@LJj8D:njZ6fhDD40
+!i113 0
+R9
 R2
-!s105 network_tb_sv_unit
-S1
+vnetwork_tb
 R3
-w1737729533
+R4
+!i10b 1
+!s100 Mhml=?GI6FW]kiVT>K^dS2
+I5_2H_;CXY0Uz1`4QT3d122
+S1
+R5
+w1737715133
 8../projectML/network_tb.sv
 F../projectML/network_tb.sv
-L0 3
-R4
+!i122 31
+L0 3 136
+R6
+R7
 r1
 !s85 0
 31
-R5
+R8
 !s107 ../projectML/network_tb.sv|
 !s90 -reportprogress|300|../projectML/network_tb.sv|
-!i113 1
-R6
+!i113 0
+R9
+R2
 vsigmoid
-R0
+R10
 !s110 1713882790
 !i10b 1
 !s100 UAFNO__FFO7[MVh18;J1P0
 I0cFS<A=OJ0SM2[N<G3faI1
-R2
+R6
 !s105 sigmoid_sv_unit
 S1
-R3
+R11
 w1712473541
 8../projectML/sigmoid.sv
 F../projectML/sigmoid.sv
 L0 1
-R4
+R12
 r1
 !s85 0
 31
@@ -145,4 +166,4 @@ r1
 !s107 ../projectML/sigmoid.sv|
 !s90 -reportprogress|300|../projectML/sigmoid.sv|
 !i113 1
-R6
+R2

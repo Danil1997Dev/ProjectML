@@ -1,11 +1,11 @@
 module ff_network #(parameter
-  WIDTH= 32,
+  WIDTH = 32,
   RANGE_SIGM = 1000,
   //neiron in 
-  LENGHT_I = 32,
+  LENGHT_I = 8,
   WIDTH_I = 1,
   //neiron mid 
-  LENGHT_MID = 8,
+  LENGHT_MID = 4,
   WIDTH_MID = $clog2(RANGE_SIGM),
   //neiron out
   LENGHT_O = 2,

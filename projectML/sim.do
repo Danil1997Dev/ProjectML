@@ -22,6 +22,10 @@ add wave -noupdate -divider {all}
 add wave -noupdate -decimal sim:/$name/* 
 add wave -noupdate -divider {dut}
 add wave -noupdate -decimal sim:/$name/dut/*
+add wave -noupdate -divider {layer in}
+add wave -noupdate -decimal sim:/$name/dut/layer_inst_in/*
+add wave -noupdate -divider {layer out}
+add wave -noupdate -decimal sim:/$name/dut/layer_inst_out/*
 add wave -noupdate -divider {manager}
 add wave -noupdate -decimal sim:/$name/dut/manager_inst/*
 #add wave -noupdate -divider {loop_l[0]}

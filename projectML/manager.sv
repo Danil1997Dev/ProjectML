@@ -45,8 +45,7 @@ module manager #(parameter
 //  logic [MAX_REG_O:MAX_REG_I+1] [WIDTH-1:0] o_reg;
   logic  [MAX_REG_O-1:0] [WIDTH-1:0] buf_reg;
   logic  addr_range_w, addr_range_i,non_equal;
-  logic  [LENGHT_O-1:0] [WIDTH-1:0]prev_reg; 
-  logic  [1:0] [WIDTH-1:0] tmp; 
+  logic  [LENGHT_O-1:0] [WIDTH-1:0]prev_reg;
   
   ////обьявление ргеистров для входных данных (нейроны )и вызодныз(неироны вызода ) 
   
@@ -290,11 +289,11 @@ module manager #(parameter
 		         end 
 					
 					
-	  Load_I_St:begin 
-					  i_o <= buf_reg[MAX_REG_I-2:MAX_REG_W];
+	  Load_I_St:begin  
+					  for (int i = 0;i <= LENGHT_I-1;i = i + 1)
+					    i_o[i] <= buf_reg[i][WIDTH_I-1:0];//MAX_REG_I-2:MAX_REG_W
 					  buf_reg[MAX_REG_O-2:MAX_REG_I] <= i_in;
-					  ready <= 0;	
-					  tmp <= buf_reg[MAX_REG_I-2:MAX_REG_W];
+					  ready <= 0;
 		         end
 						
 	  Work_St:begin 
