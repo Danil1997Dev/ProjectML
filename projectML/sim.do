@@ -9,7 +9,10 @@ vlib work
  vlog "../$path/network_tb.sv"  
  
 #mem load -i D:/intelFPGA/18.1/VerilogHDL/projectML/projectML/mema.mem {/layer_tb/dut/loop_l[0]/sigm_inst_o/sigm}  
- 
+mem load -i D:/IntelFPGA/project/projectML/projectML/projectML/numbered_numbers.mem {/network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o/sigm}
+mem load -i D:/IntelFPGA/project/projectML/projectML/projectML/numbered_numbers.mem {/network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o/sigm}
+mem load -i D:/IntelFPGA/project/projectML/projectML/projectML/numbered_numbers.mem {/network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o/sigm}
+mem load -i D:/IntelFPGA/project/projectML/projectML/projectML/numbered_numbers.mem {/network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o/sigm}
 vsim -voptargs=+acc work.$name
 
 # Set the window types 
@@ -24,8 +27,12 @@ add wave -noupdate -divider {dut}
 add wave -noupdate -decimal sim:/$name/dut/*
 add wave -noupdate -divider {layer in}
 add wave -noupdate -decimal sim:/$name/dut/layer_inst_in/*
+add wave -position insertpoint {sim:/network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o/*}
+add wave -position insertpoint {sim:/network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o/*}
 add wave -noupdate -divider {layer out}
 add wave -noupdate -decimal sim:/$name/dut/layer_inst_out/*
+add wave -position insertpoint {sim:/network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o/*}
+add wave -position insertpoint {sim:/network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o/*}
 add wave -noupdate -divider {manager}
 add wave -noupdate -decimal sim:/$name/dut/manager_inst/*
 #add wave -noupdate -divider {loop_l[0]}

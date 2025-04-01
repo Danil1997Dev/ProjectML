@@ -1,0 +1,19 @@
+// memory data file (do not edit the following line - required for mem load use)
+// instance=/layer_tb/dut/loop_l[0]/sigm_inst_o/sigm
+// format=mti addressradix=d dataradix=h version=1.0 wordsperline=1
+0: 10c
+1: 10d
+2: 10d
+3: 10e
+4: 10e
+5: 10f
+6: 10f
+7: 110
+8: 110
+9: 111
+10: 111
+11: 112
+12: 112
+13: 113
+14: 113
+15: 114

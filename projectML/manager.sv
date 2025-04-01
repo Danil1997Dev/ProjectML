@@ -283,7 +283,8 @@ module manager #(parameter
 						
 	  Load_W_St:begin 
 					  wr <= 1 ;
-					  w_o <= buf_reg[MAX_REG_W-2:0];
+					  for (int i = 0;i <= (MAX_REG_W-1)-1;i = i + 1)
+					    w_o[i] <= buf_reg[i][WIDTH_W-1:0];//MAX_REG_I-2:MAX_REG_W 
 					  ready <= 0;
 					  
 		         end 
@@ -291,7 +292,7 @@ module manager #(parameter
 					
 	  Load_I_St:begin  
 					  for (int i = 0;i <= LENGHT_I-1;i = i + 1)
-					    i_o[i] <= buf_reg[i][WIDTH_I-1:0];//MAX_REG_I-2:MAX_REG_W
+					    i_o[i] <= buf_reg[MAX_REG_W+i][WIDTH_I-1:0];//MAX_REG_I-2:MAX_REG_W
 					  buf_reg[MAX_REG_O-2:MAX_REG_I] <= i_in;
 					  ready <= 0;
 		         end

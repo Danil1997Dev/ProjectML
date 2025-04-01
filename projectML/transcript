@@ -13,577 +13,139 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-do sim.dodo sim
-# Cannot open macro file: sim.dodo
 do sim.do
 # network_tb
 # projectML
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 18:19:05 on Mar 27,2025
+# Start time: 20:30:51 on Apr 01,2025
 # vlog -reportprogress 300 ../projectML/manager.sv 
 # -- Compiling module manager
 # 
 # Top level modules:
 # 	manager
-# End time: 18:19:05 on Mar 27,2025, Elapsed time: 0:00:00
+# End time: 20:30:51 on Apr 01,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 18:19:05 on Mar 27,2025
+# Start time: 20:30:51 on Apr 01,2025
 # vlog -reportprogress 300 ../projectML/layer.sv 
 # -- Compiling module layer
 # 
 # Top level modules:
 # 	layer
-# End time: 18:19:05 on Mar 27,2025, Elapsed time: 0:00:00
+# End time: 20:30:51 on Apr 01,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 18:19:05 on Mar 27,2025
+# Start time: 20:30:51 on Apr 01,2025
 # vlog -reportprogress 300 ../projectML/ff_network.sv 
 # -- Compiling module ff_network
 # 
 # Top level modules:
 # 	ff_network
-# End time: 18:19:05 on Mar 27,2025, Elapsed time: 0:00:00
+# End time: 20:30:51 on Apr 01,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 18:19:05 on Mar 27,2025
+# Start time: 20:30:51 on Apr 01,2025
 # vlog -reportprogress 300 ../projectML/network_tb.sv 
 # -- Compiling module network_tb
 # 
 # Top level modules:
 # 	network_tb
-# End time: 18:19:06 on Mar 27,2025, Elapsed time: 0:00:01
+# End time: 20:30:51 on Apr 01,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -voptargs="+acc" work.network_tb 
-# Start time: 18:19:06 on Mar 27,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Note: (vopt-143) Recognized 1 FSM in module "manager(fast)".
-# Loading sv_std.std
-# Loading work.network_tb(fast)
-# Loading work.ff_network(fast)
-# Loading work.manager(fast)
-# Loading work.layer(fast)
-# Loading work.sigmoid(fast)
-# Loading work.layer(fast__1)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# Invalid window pattern: do
-# Debug data file, vsim.dbg, does not exist.
+# Error in macro ./sim.do line 12
 # 
-# Invoke vsim with -debugDB to create this file.
-# Debug data file, vsim.dbg, does not exist.
-# 
-# Invoke vsim with -debugDB to create this file.
-# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
-#           Attempting to use alternate WLF file "./wlftk3sxvz".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftk3sxvz
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
-# ** Note: $stop    : ../projectML/network_tb.sv(89)
-#    Time: 640 ns  Iteration: 0  Instance: /network_tb
-# Break in Module network_tb at ../projectML/network_tb.sv line 89
-# Causality operation skipped due to absence of debug database file
-do sim.do
-# network_tb
-# projectML
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 18:57:42 on Mar 27,2025
-# vlog -reportprogress 300 ../projectML/manager.sv 
-# -- Compiling module manager
-# 
-# Top level modules:
-# 	manager
-# End time: 18:57:42 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 18:57:42 on Mar 27,2025
-# vlog -reportprogress 300 ../projectML/layer.sv 
-# -- Compiling module layer
-# 
-# Top level modules:
-# 	layer
-# End time: 18:57:42 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 18:57:42 on Mar 27,2025
-# vlog -reportprogress 300 ../projectML/ff_network.sv 
-# -- Compiling module ff_network
-# 
-# Top level modules:
-# 	ff_network
-# End time: 18:57:42 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 18:57:42 on Mar 27,2025
-# vlog -reportprogress 300 ../projectML/network_tb.sv 
-# -- Compiling module network_tb
-# 
-# Top level modules:
-# 	network_tb
-# End time: 18:57:42 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 18:57:53 on Mar 27,2025, Elapsed time: 0:38:47
-# Errors: 0, Warnings: 10
-# vsim -voptargs="+acc" work.network_tb 
-# Start time: 18:57:53 on Mar 27,2025
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Note: (vopt-143) Recognized 1 FSM in module "manager(fast)".
-# Loading sv_std.std
-# Loading work.network_tb(fast)
-# Loading work.ff_network(fast)
-# Loading work.manager(fast)
-# Loading work.layer(fast)
-# Loading work.sigmoid(fast)
-# Loading work.layer(fast__1)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# Invalid window pattern: do
-# Debug data file, vsim.dbg, does not exist.
-# 
-# Invoke vsim with -debugDB to create this file.
-# Debug data file, vsim.dbg, does not exist.
-# 
-# Invoke vsim with -debugDB to create this file.
-# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
-#           Attempting to use alternate WLF file "./wlft7we8j6".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft7we8j6
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
-# ** Note: $stop    : ../projectML/network_tb.sv(89)
-#    Time: 640 ns  Iteration: 0  Instance: /network_tb
-# Break in Module network_tb at ../projectML/network_tb.sv line 89
-do sim.do
-# network_tb
-# projectML
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 19:00:21 on Mar 27,2025
-# vlog -reportprogress 300 ../projectML/manager.sv 
-# -- Compiling module manager
-# 
-# Top level modules:
-# 	manager
-# End time: 19:00:21 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 19:00:21 on Mar 27,2025
-# vlog -reportprogress 300 ../projectML/layer.sv 
-# -- Compiling module layer
-# 
-# Top level modules:
-# 	layer
-# End time: 19:00:21 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 19:00:21 on Mar 27,2025
-# vlog -reportprogress 300 ../projectML/ff_network.sv 
-# -- Compiling module ff_network
-# 
-# Top level modules:
-# 	ff_network
-# End time: 19:00:21 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 19:00:21 on Mar 27,2025
-# vlog -reportprogress 300 ../projectML/network_tb.sv 
-# -- Compiling module network_tb
-# 
-# Top level modules:
-# 	network_tb
-# End time: 19:00:21 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:00:30 on Mar 27,2025, Elapsed time: 0:02:37
-# Errors: 0, Warnings: 10
-# vsim -voptargs="+acc" work.network_tb 
-# Start time: 19:00:30 on Mar 27,2025
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Note: (vopt-143) Recognized 1 FSM in module "manager(fast)".
-# Loading sv_std.std
-# Loading work.network_tb(fast)
-# Loading work.ff_network(fast)
-# Loading work.manager(fast)
-# Loading work.layer(fast)
-# Loading work.sigmoid(fast)
-# Loading work.layer(fast__1)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (2) for port 'i_o'. The port definition is at: ../projectML/manager.sv(39).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/manager_inst File: ../projectML/ff_network.sv Line: 58
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# Invalid window pattern: do
-# Debug data file, vsim.dbg, does not exist.
-# 
-# Invoke vsim with -debugDB to create this file.
-# Debug data file, vsim.dbg, does not exist.
-# 
-# Invoke vsim with -debugDB to create this file.
-# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
-#           Attempting to use alternate WLF file "./wlft5czdn8".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft5czdn8
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
-# ** Note: $stop    : ../projectML/network_tb.sv(89)
-#    Time: 640 ns  Iteration: 0  Instance: /network_tb
-# Break in Module network_tb at ../projectML/network_tb.sv line 89
-do sim.do
-# network_tb
-# projectML
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 19:49:02 on Mar 27,2025
-# vlog -reportprogress 300 ../projectML/manager.sv 
-# -- Compiling module manager
-# 
-# Top level modules:
-# 	manager
-# End time: 19:49:02 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 19:49:02 on Mar 27,2025
-# vlog -reportprogress 300 ../projectML/layer.sv 
-# -- Compiling module layer
-# 
-# Top level modules:
-# 	layer
-# End time: 19:49:02 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 19:49:02 on Mar 27,2025
-# vlog -reportprogress 300 ../projectML/ff_network.sv 
-# -- Compiling module ff_network
-# 
-# Top level modules:
-# 	ff_network
-# End time: 19:49:03 on Mar 27,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 19:49:03 on Mar 27,2025
-# vlog -reportprogress 300 ../projectML/network_tb.sv 
-# -- Compiling module network_tb
-# 
-# Top level modules:
-# 	network_tb
-# End time: 19:49:03 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:49:13 on Mar 27,2025, Elapsed time: 0:48:43
-# Errors: 0, Warnings: 11
-# vsim -voptargs="+acc" work.network_tb 
-# Start time: 19:49:13 on Mar 27,2025
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Note: (vopt-143) Recognized 1 FSM in module "manager(fast)".
-# Loading sv_std.std
-# Loading work.network_tb(fast)
-# Loading work.ff_network(fast)
-# Loading work.manager(fast)
-# Loading work.layer(fast)
-# Loading work.sigmoid(fast)
-# Loading work.layer(fast__1)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (2) for port 'i_o'. The port definition is at: ../projectML/manager.sv(39).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/manager_inst File: ../projectML/ff_network.sv Line: 58
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# Invalid window pattern: do
-# Debug data file, vsim.dbg, does not exist.
-# 
-# Invoke vsim with -debugDB to create this file.
-# Debug data file, vsim.dbg, does not exist.
-# 
-# Invoke vsim with -debugDB to create this file.
-# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
-#           Attempting to use alternate WLF file "./wlftbcwtn0".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftbcwtn0
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
-# ** Note: $stop    : ../projectML/network_tb.sv(89)
-#    Time: 640 ns  Iteration: 0  Instance: /network_tb
-# Break in Module network_tb at ../projectML/network_tb.sv line 89
-do sim.do
-# network_tb
-# projectML
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 20:46:28 on Mar 27,2025
-# vlog -reportprogress 300 ../projectML/manager.sv 
-# -- Compiling module manager
-# 
-# Top level modules:
-# 	manager
-# End time: 20:46:28 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 20:46:28 on Mar 27,2025
-# vlog -reportprogress 300 ../projectML/layer.sv 
-# -- Compiling module layer
-# 
-# Top level modules:
-# 	layer
-# End time: 20:46:28 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 20:46:28 on Mar 27,2025
-# vlog -reportprogress 300 ../projectML/ff_network.sv 
-# -- Compiling module ff_network
-# 
-# Top level modules:
-# 	ff_network
-# End time: 20:46:28 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 20:46:28 on Mar 27,2025
-# vlog -reportprogress 300 ../projectML/network_tb.sv 
-# -- Compiling module network_tb
-# 
-# Top level modules:
-# 	network_tb
-# End time: 20:46:28 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 20:46:40 on Mar 27,2025, Elapsed time: 0:57:27
-# Errors: 0, Warnings: 11
-# vsim -voptargs="+acc" work.network_tb 
-# Start time: 20:46:40 on Mar 27,2025
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Note: (vopt-143) Recognized 1 FSM in module "manager(fast)".
-# Loading sv_std.std
-# Loading work.network_tb(fast)
-# Loading work.ff_network(fast)
-# Loading work.manager(fast)
-# Loading work.layer(fast)
-# Loading work.sigmoid(fast)
-# Loading work.layer(fast__1)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# Invalid window pattern: do
-# Debug data file, vsim.dbg, does not exist.
-# 
-# Invoke vsim with -debugDB to create this file.
-# Debug data file, vsim.dbg, does not exist.
-# 
-# Invoke vsim with -debugDB to create this file.
-# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
-#           Attempting to use alternate WLF file "./wlftzcmz7d".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftzcmz7d
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
-# ** Note: $stop    : ../projectML/network_tb.sv(89)
-#    Time: 640 ns  Iteration: 0  Instance: /network_tb
-# Break in Module network_tb at ../projectML/network_tb.sv line 89
-do sim.do
-# network_tb
-# projectML
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 20:52:30 on Mar 27,2025
-# vlog -reportprogress 300 ../projectML/manager.sv 
-# -- Compiling module manager
-# 
-# Top level modules:
-# 	manager
-# End time: 20:52:30 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 20:52:30 on Mar 27,2025
-# vlog -reportprogress 300 ../projectML/layer.sv 
-# -- Compiling module layer
-# 
-# Top level modules:
-# 	layer
-# End time: 20:52:30 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 20:52:30 on Mar 27,2025
-# vlog -reportprogress 300 ../projectML/ff_network.sv 
-# -- Compiling module ff_network
-# 
-# Top level modules:
-# 	ff_network
-# End time: 20:52:30 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 20:52:30 on Mar 27,2025
-# vlog -reportprogress 300 ../projectML/network_tb.sv 
-# -- Compiling module network_tb
-# 
-# Top level modules:
-# 	network_tb
-# End time: 20:52:30 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 20:52:40 on Mar 27,2025, Elapsed time: 0:06:00
-# Errors: 0, Warnings: 10
-# vsim -voptargs="+acc" work.network_tb 
-# Start time: 20:52:40 on Mar 27,2025
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading sv_std.std
-# Loading work.network_tb(fast)
-# Loading work.ff_network(fast)
-# Loading work.manager(fast)
-# Loading work.layer(fast)
-# Loading work.sigmoid(fast)
-# Loading work.layer(fast__1)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# Invalid window pattern: do
-# Debug data file, vsim.dbg, does not exist.
-# 
-# Invoke vsim with -debugDB to create this file.
-# Debug data file, vsim.dbg, does not exist.
-# 
-# Invoke vsim with -debugDB to create this file.
-# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
-#           Attempting to use alternate WLF file "./wlftc8x22d".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftc8x22d
-# ** UI-Msg: (vish-4014) No objects found matching '/network_tb/layer_inst_in/*'.
-# Error in macro ./sim.do line 26
-# ** UI-Msg: (vish-4014) No objects found matching '/network_tb/layer_inst_in/*'.
 #     while executing
-# "add wave -noupdate -divider {all}"
+# "mem load -i D:/IntelFPGA/project/projectML/projectML/projectML/numbered_numbers.mem {/network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o/sigm}"
 do sim.do
 # network_tb
 # projectML
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 20:53:37 on Mar 27,2025
+# Start time: 20:31:40 on Apr 01,2025
 # vlog -reportprogress 300 ../projectML/manager.sv 
 # -- Compiling module manager
 # 
 # Top level modules:
 # 	manager
-# End time: 20:53:37 on Mar 27,2025, Elapsed time: 0:00:00
+# End time: 20:31:40 on Apr 01,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 20:53:37 on Mar 27,2025
+# Start time: 20:31:40 on Apr 01,2025
 # vlog -reportprogress 300 ../projectML/layer.sv 
 # -- Compiling module layer
 # 
 # Top level modules:
 # 	layer
-# End time: 20:53:37 on Mar 27,2025, Elapsed time: 0:00:00
+# End time: 20:31:40 on Apr 01,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 20:53:37 on Mar 27,2025
+# Start time: 20:31:40 on Apr 01,2025
 # vlog -reportprogress 300 ../projectML/ff_network.sv 
 # -- Compiling module ff_network
 # 
 # Top level modules:
 # 	ff_network
-# End time: 20:53:37 on Mar 27,2025, Elapsed time: 0:00:00
+# End time: 20:31:40 on Apr 01,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 20:53:37 on Mar 27,2025
+# Start time: 20:31:40 on Apr 01,2025
 # vlog -reportprogress 300 ../projectML/network_tb.sv 
 # -- Compiling module network_tb
 # 
 # Top level modules:
 # 	network_tb
-# End time: 20:53:37 on Mar 27,2025, Elapsed time: 0:00:00
+# End time: 20:31:40 on Apr 01,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 20:53:49 on Mar 27,2025, Elapsed time: 0:01:09
-# Errors: 0, Warnings: 6
+# Error in macro ./sim.do line 12
+# 
+#     while executing
+# "mem load -i D:/IntelFPGA/project/projectML/projectML/projectML/numbered_numbers.mem {/network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o/sigm}"
+do sim.do
+# network_tb
+# projectML
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:31:57 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/manager.sv 
+# -- Compiling module manager
+# 
+# Top level modules:
+# 	manager
+# End time: 20:31:57 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:31:57 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 20:31:57 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:31:57 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/ff_network.sv 
+# -- Compiling module ff_network
+# 
+# Top level modules:
+# 	ff_network
+# End time: 20:31:57 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:31:57 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/network_tb.sv 
+# -- Compiling module network_tb
+# 
+# Top level modules:
+# 	network_tb
+# End time: 20:31:57 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" work.network_tb 
-# Start time: 20:53:49 on Mar 27,2025
+# Start time: 20:31:57 on Apr 01,2025
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading sv_std.std
 # Loading work.network_tb(fast)
@@ -592,13 +154,13 @@ do sim.do
 # Loading work.layer(fast)
 # Loading work.sigmoid(fast)
 # Loading work.layer(fast__1)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
 #    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
 #    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
 #    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
 #    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
 # Invalid window pattern: do
 # Debug data file, vsim.dbg, does not exist.
@@ -612,67 +174,59 @@ do sim.do
 # .main_pane.objects.interior.cs.body.tree
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
-#           Attempting to use alternate WLF file "./wlftkz01mv".
+#           Attempting to use alternate WLF file "./wlftcss639".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftkz01mv
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
-#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
-# ** Note: $stop    : ../projectML/network_tb.sv(89)
-#    Time: 640 ns  Iteration: 0  Instance: /network_tb
-# Break in Module network_tb at ../projectML/network_tb.sv line 89
-add wave -position insertpoint sim:/network_tb/dut/layer_inst_in/*
-add wave -position insertpoint sim:/network_tb/dut/layer_inst_out/*
+#           Using alternate file: ./wlftcss639
+# ** Error: unknown or ambiguous subcommand "-noupdate": must be activecursor, addcursor, clipboard, collapse, configcursor, create, cursor, cursorconfig, cursortime, deletecursor, edit, editwrite, expand, export, exportvcd, group, guiObjGetUPFInfo, guiObjHasUPFInfo, import, interrupt, map, modify, overlay, pah, positioncursor, refresh, seecursor, seetime, sort, ungroup, write, zoom, zoomcursor, zoomfull, zoomin, zoomlast, zoomout, or zoomrange
+# Error in macro ./sim.do line 38
+# unknown or ambiguous subcommand "-noupdate": must be activecursor, addcursor, clipboard, collapse, configcursor, create, cursor, cursorconfig, cursortime, deletecursor, edit, editwrite, expand, export, exportvcd, group, guiObjGetUPFInfo, guiObjHasUPFInfo, import, interrupt, map, modify, overlay, pah, positioncursor, refresh, seecursor, seetime, sort, ungroup, write, zoom, zoomcursor, zoomfull, zoomin, zoomlast, zoomout, or zoomrange
+#     while executing
+# "wave -noupdate -divider {loop_l[0]}"
 do sim.do
 # network_tb
 # projectML
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 20:54:56 on Mar 27,2025
+# Start time: 20:33:11 on Apr 01,2025
 # vlog -reportprogress 300 ../projectML/manager.sv 
 # -- Compiling module manager
 # 
 # Top level modules:
 # 	manager
-# End time: 20:54:56 on Mar 27,2025, Elapsed time: 0:00:00
+# End time: 20:33:11 on Apr 01,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 20:54:56 on Mar 27,2025
+# Start time: 20:33:11 on Apr 01,2025
 # vlog -reportprogress 300 ../projectML/layer.sv 
 # -- Compiling module layer
 # 
 # Top level modules:
 # 	layer
-# End time: 20:54:56 on Mar 27,2025, Elapsed time: 0:00:00
+# End time: 20:33:11 on Apr 01,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 20:54:56 on Mar 27,2025
+# Start time: 20:33:11 on Apr 01,2025
 # vlog -reportprogress 300 ../projectML/ff_network.sv 
 # -- Compiling module ff_network
 # 
 # Top level modules:
 # 	ff_network
-# End time: 20:54:56 on Mar 27,2025, Elapsed time: 0:00:00
+# End time: 20:33:11 on Apr 01,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 20:54:56 on Mar 27,2025
+# Start time: 20:33:11 on Apr 01,2025
 # vlog -reportprogress 300 ../projectML/network_tb.sv 
 # -- Compiling module network_tb
 # 
 # Top level modules:
 # 	network_tb
-# End time: 20:54:56 on Mar 27,2025, Elapsed time: 0:00:00
+# End time: 20:33:11 on Apr 01,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 20:55:09 on Mar 27,2025, Elapsed time: 0:01:20
-# Errors: 0, Warnings: 10
+# End time: 20:33:19 on Apr 01,2025, Elapsed time: 0:01:22
+# Errors: 1, Warnings: 6
 # vsim -voptargs="+acc" work.network_tb 
-# Start time: 20:55:09 on Mar 27,2025
+# Start time: 20:33:19 on Apr 01,2025
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading sv_std.std
 # Loading work.network_tb(fast)
@@ -681,13 +235,13 @@ do sim.do
 # Loading work.layer(fast)
 # Loading work.sigmoid(fast)
 # Loading work.layer(fast__1)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
 #    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
 #    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
 #    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
 #    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
 # Invalid window pattern: do
 # Debug data file, vsim.dbg, does not exist.
@@ -701,28 +255,20 @@ do sim.do
 # .main_pane.objects.interior.cs.body.tree
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
-#           Attempting to use alternate WLF file "./wlftvcrtbz".
+#           Attempting to use alternate WLF file "./wlftg1v1z0".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftvcrtbz
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
+#           Using alternate file: ./wlftg1v1z0
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
 #    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
 #    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
 #    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
 #    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
-# ** Note: $stop    : ../projectML/network_tb.sv(89)
+# ** Note: $stop    : ../projectML/network_tb.sv(91)
 #    Time: 640 ns  Iteration: 0  Instance: /network_tb
-# Break in Module network_tb at ../projectML/network_tb.sv line 89
-add wave -position insertpoint {sim:/network_tb/dut/layer_inst_in/loop_k[1]/*}
-# ** UI-Msg: (vish-4014) No objects found matching '/network_tb/dut/layer_inst_in/loop_k[1]/*'.
-add wave -position insertpoint {sim:/network_tb/dut/layer_inst_in/loop_k[1]/loop_m[1]/*}
-add wave -position insertpoint {sim:/network_tb/dut/layer_inst_in/loop_k[1]/loop_m[0]/*}
-add wave -position insertpoint {sim:/network_tb/dut/layer_inst_in/loop_k[0]/loop_m[1]/*}
-add wave -position insertpoint {sim:/network_tb/dut/layer_inst_in/loop_k[0]/loop_m[0]/*}
-add wave -position insertpoint {sim:/network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o/*}
-add wave -position insertpoint {sim:/network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o/*}
+# Break in Module network_tb at ../projectML/network_tb.sv line 91
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Note: (vsim-8009) Loading existing optimized design _opt
@@ -732,36 +278,1620 @@ restart
 # Loading work.layer(fast)
 # Loading work.sigmoid(fast)
 # Loading work.layer(fast__1)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
 #    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
 #    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
 #    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
 #    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
-# Break key hit
-# Break key hit
 run -all
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
 #    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
 #    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
 #    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
-# ** Warning: (vsim-PLI-3406) Too many digits (3) in data on line 1 of file "snum.txt". (Max is 1.)    : ../projectML/sigmoid.sv(15)
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
 #    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
-# ** Note: $stop    : ../projectML/network_tb.sv(89)
+# ** Note: $stop    : ../projectML/network_tb.sv(91)
 #    Time: 640 ns  Iteration: 0  Instance: /network_tb
-# Break in Module network_tb at ../projectML/network_tb.sv line 89
-mem load -i D:/IntelFPGA/project/projectML/projectML/projectML/mema.mem {/network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o/sigm}
-# (vsim-3944) Memory address read on line 20 of file "D:/IntelFPGA/project/projectML/projectML/projectML/mema.mem" is out of bounds specified for mem load command.
-# Ignoring the rest of the data file.  (Current address [16], address range [0:15])
-mem load -i D:/IntelFPGA/project/projectML/projectML/projectML/mema.mem {/network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o/sigm}
-# (vsim-3944) Memory address read on line 20 of file "D:/IntelFPGA/project/projectML/projectML/projectML/mema.mem" is out of bounds specified for mem load command.
-# Ignoring the rest of the data file.  (Current address [16], address range [0:15])
-mem load -i D:/IntelFPGA/project/projectML/projectML/projectML/mema.mem -startaddress 0 -endaddress 15 {/network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o/sigm}
-# (vsim-3944) Memory address read on line 20 of file "D:/IntelFPGA/project/projectML/projectML/projectML/mema.mem" is out of bounds specified for mem load command.
-# Ignoring the rest of the data file.  (Current address [16], address range [0:15])
-# End time: 22:02:57 on Mar 27,2025, Elapsed time: 1:07:48
+# Break in Module network_tb at ../projectML/network_tb.sv line 91
+run -all
+do sim.do
+# network_tb
+# projectML
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:39:53 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/manager.sv 
+# -- Compiling module manager
+# 
+# Top level modules:
+# 	manager
+# End time: 20:39:53 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:39:53 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 20:39:53 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:39:53 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/ff_network.sv 
+# -- Compiling module ff_network
+# 
+# Top level modules:
+# 	ff_network
+# End time: 20:39:53 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:39:53 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/network_tb.sv 
+# -- Compiling module network_tb
+# 
+# Top level modules:
+# 	network_tb
+# End time: 20:39:53 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:40:09 on Apr 01,2025, Elapsed time: 0:06:50
 # Errors: 0, Warnings: 8
+# vsim -voptargs="+acc" work.network_tb 
+# Start time: 20:40:09 on Apr 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "manager(fast)".
+# ** Warning: ../projectML/layer.sv(65): (vopt-2697) LSB -1 of part-select into 'sum_mult' is out of bounds.
+# ** Warning: ../projectML/layer.sv(65): (vopt-2697) LSB -1 of part-select into 'sum_mult' is out of bounds.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.network_tb(fast)
+# Loading work.ff_network(fast)
+# Loading work.manager(fast)
+# Loading work.layer(fast)
+# Loading work.sigmoid(fast)
+# Loading work.layer(fast__1)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# Invalid window pattern: do
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
+#           Attempting to use alternate WLF file "./wlftbaah4g".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftbaah4g
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
+# ** Note: $stop    : ../projectML/network_tb.sv(91)
+#    Time: 640 ns  Iteration: 0  Instance: /network_tb
+# Break in Module network_tb at ../projectML/network_tb.sv line 91
+do sim.do
+# network_tb
+# projectML
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:41:39 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/manager.sv 
+# -- Compiling module manager
+# 
+# Top level modules:
+# 	manager
+# End time: 20:41:39 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:41:39 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 20:41:39 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:41:39 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/ff_network.sv 
+# -- Compiling module ff_network
+# 
+# Top level modules:
+# 	ff_network
+# End time: 20:41:39 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:41:39 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/network_tb.sv 
+# -- Compiling module network_tb
+# 
+# Top level modules:
+# 	network_tb
+# End time: 20:41:39 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:41:53 on Apr 01,2025, Elapsed time: 0:01:44
+# Errors: 0, Warnings: 12
+# vsim -voptargs="+acc" work.network_tb 
+# Start time: 20:41:53 on Apr 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "manager(fast)".
+# ** Warning: ../projectML/layer.sv(65): (vopt-2697) LSB -4 of part-select into 'sum_mult' is out of bounds.
+# ** Warning: ../projectML/layer.sv(65): (vopt-2697) LSB -4 of part-select into 'sum_mult' is out of bounds.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.network_tb(fast)
+# Loading work.ff_network(fast)
+# Loading work.manager(fast)
+# Loading work.layer(fast)
+# Loading work.sigmoid(fast)
+# Loading work.layer(fast__1)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# Invalid window pattern: do
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
+#           Attempting to use alternate WLF file "./wlftk78tkm".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftk78tkm
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
+# ** Note: $stop    : ../projectML/network_tb.sv(91)
+#    Time: 640 ns  Iteration: 0  Instance: /network_tb
+# Break in Module network_tb at ../projectML/network_tb.sv line 91
+do sim.do
+# network_tb
+# projectML
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:42:54 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/manager.sv 
+# -- Compiling module manager
+# 
+# Top level modules:
+# 	manager
+# End time: 20:42:54 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:42:54 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 20:42:54 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:42:54 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/ff_network.sv 
+# -- Compiling module ff_network
+# 
+# Top level modules:
+# 	ff_network
+# End time: 20:42:54 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:42:54 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/network_tb.sv 
+# -- Compiling module network_tb
+# 
+# Top level modules:
+# 	network_tb
+# End time: 20:42:54 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:43:07 on Apr 01,2025, Elapsed time: 0:01:14
+# Errors: 0, Warnings: 12
+# vsim -voptargs="+acc" work.network_tb 
+# Start time: 20:43:07 on Apr 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "manager(fast)".
+# ** Warning: ../projectML/layer.sv(65): (vopt-2697) LSB -3 of part-select into 'sum_mult' is out of bounds.
+# ** Warning: ../projectML/layer.sv(65): (vopt-2697) LSB -3 of part-select into 'sum_mult' is out of bounds.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.network_tb(fast)
+# Loading work.ff_network(fast)
+# Loading work.manager(fast)
+# Loading work.layer(fast)
+# Loading work.sigmoid(fast)
+# Loading work.layer(fast__1)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# Invalid window pattern: do
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
+#           Attempting to use alternate WLF file "./wlftrn1464".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftrn1464
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
+# ** Note: $stop    : ../projectML/network_tb.sv(91)
+#    Time: 640 ns  Iteration: 0  Instance: /network_tb
+# Break in Module network_tb at ../projectML/network_tb.sv line 91
+do sim.do
+# network_tb
+# projectML
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:44:42 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/manager.sv 
+# -- Compiling module manager
+# 
+# Top level modules:
+# 	manager
+# End time: 20:44:42 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:44:42 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 20:44:42 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:44:42 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/ff_network.sv 
+# -- Compiling module ff_network
+# 
+# Top level modules:
+# 	ff_network
+# End time: 20:44:42 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:44:42 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/network_tb.sv 
+# -- Compiling module network_tb
+# 
+# Top level modules:
+# 	network_tb
+# End time: 20:44:42 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:44:59 on Apr 01,2025, Elapsed time: 0:01:52
+# Errors: 0, Warnings: 12
+# vsim -voptargs="+acc" work.network_tb 
+# Start time: 20:44:59 on Apr 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "manager(fast)".
+# Loading sv_std.std
+# Loading work.network_tb(fast)
+# Loading work.ff_network(fast)
+# Loading work.manager(fast)
+# Loading work.layer(fast)
+# Loading work.sigmoid(fast)
+# Loading work.layer(fast__1)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# Invalid window pattern: do
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
+#           Attempting to use alternate WLF file "./wlft0h9ea7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft0h9ea7
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
+# ** Note: $stop    : ../projectML/network_tb.sv(91)
+#    Time: 640 ns  Iteration: 0  Instance: /network_tb
+# Break in Module network_tb at ../projectML/network_tb.sv line 91
+# Causality operation skipped due to absence of debug database file
+do sim.do
+# network_tb
+# projectML
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:54:57 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/manager.sv 
+# -- Compiling module manager
+# 
+# Top level modules:
+# 	manager
+# End time: 20:54:57 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:54:57 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 20:54:57 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:54:57 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/ff_network.sv 
+# -- Compiling module ff_network
+# 
+# Top level modules:
+# 	ff_network
+# End time: 20:54:57 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:54:57 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/network_tb.sv 
+# -- Compiling module network_tb
+# 
+# Top level modules:
+# 	network_tb
+# End time: 20:54:58 on Apr 01,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 20:55:12 on Apr 01,2025, Elapsed time: 0:10:13
+# Errors: 0, Warnings: 10
+# vsim -voptargs="+acc" work.network_tb 
+# Start time: 20:55:12 on Apr 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "manager(fast)".
+# Loading sv_std.std
+# Loading work.network_tb(fast)
+# Loading work.ff_network(fast)
+# Loading work.manager(fast)
+# Loading work.layer(fast)
+# Loading work.sigmoid(fast)
+# Loading work.layer(fast__1)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# Invalid window pattern: do
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
+#           Attempting to use alternate WLF file "./wlft5rtw22".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft5rtw22
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
+# ** Note: $stop    : ../projectML/network_tb.sv(91)
+#    Time: 640 ns  Iteration: 0  Instance: /network_tb
+# Break in Module network_tb at ../projectML/network_tb.sv line 91
+do sim.do
+# network_tb
+# projectML
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:56:12 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/manager.sv 
+# -- Compiling module manager
+# 
+# Top level modules:
+# 	manager
+# End time: 20:56:12 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:56:12 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 20:56:12 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:56:12 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/ff_network.sv 
+# -- Compiling module ff_network
+# 
+# Top level modules:
+# 	ff_network
+# End time: 20:56:12 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:56:12 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/network_tb.sv 
+# -- Compiling module network_tb
+# 
+# Top level modules:
+# 	network_tb
+# End time: 20:56:12 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:56:25 on Apr 01,2025, Elapsed time: 0:01:13
+# Errors: 0, Warnings: 10
+# vsim -voptargs="+acc" work.network_tb 
+# Start time: 20:56:25 on Apr 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "manager(fast)".
+# Loading sv_std.std
+# Loading work.network_tb(fast)
+# Loading work.ff_network(fast)
+# Loading work.manager(fast)
+# Loading work.layer(fast)
+# Loading work.sigmoid(fast)
+# Loading work.layer(fast__1)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# Invalid window pattern: do
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
+#           Attempting to use alternate WLF file "./wlftw98rtb".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftw98rtb
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
+# ** Note: $stop    : ../projectML/network_tb.sv(91)
+#    Time: 640 ns  Iteration: 0  Instance: /network_tb
+# Break in Module network_tb at ../projectML/network_tb.sv line 91
+do sim.do
+# network_tb
+# projectML
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:57:08 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/manager.sv 
+# -- Compiling module manager
+# 
+# Top level modules:
+# 	manager
+# End time: 20:57:08 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:57:08 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 20:57:08 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:57:08 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/ff_network.sv 
+# -- Compiling module ff_network
+# 
+# Top level modules:
+# 	ff_network
+# End time: 20:57:08 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:57:08 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/network_tb.sv 
+# -- Compiling module network_tb
+# 
+# Top level modules:
+# 	network_tb
+# End time: 20:57:08 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:57:24 on Apr 01,2025, Elapsed time: 0:00:59
+# Errors: 0, Warnings: 10
+# vsim -voptargs="+acc" work.network_tb 
+# Start time: 20:57:24 on Apr 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "manager(fast)".
+# Loading sv_std.std
+# Loading work.network_tb(fast)
+# Loading work.ff_network(fast)
+# Loading work.manager(fast)
+# Loading work.layer(fast)
+# Loading work.sigmoid(fast)
+# Loading work.layer(fast__1)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# Invalid window pattern: do
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
+#           Attempting to use alternate WLF file "./wlft2432yz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft2432yz
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
+# ** Note: $stop    : ../projectML/network_tb.sv(91)
+#    Time: 640 ns  Iteration: 0  Instance: /network_tb
+# Break in Module network_tb at ../projectML/network_tb.sv line 91
+do sim.do
+# network_tb
+# projectML
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:02:44 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/manager.sv 
+# -- Compiling module manager
+# 
+# Top level modules:
+# 	manager
+# End time: 21:02:44 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:02:44 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 21:02:44 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:02:44 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/ff_network.sv 
+# -- Compiling module ff_network
+# 
+# Top level modules:
+# 	ff_network
+# End time: 21:02:44 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:02:44 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/network_tb.sv 
+# -- Compiling module network_tb
+# 
+# Top level modules:
+# 	network_tb
+# End time: 21:02:44 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:02:58 on Apr 01,2025, Elapsed time: 0:05:34
+# Errors: 0, Warnings: 10
+# vsim -voptargs="+acc" work.network_tb 
+# Start time: 21:02:58 on Apr 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "manager(fast)".
+# Loading sv_std.std
+# Loading work.network_tb(fast)
+# Loading work.ff_network(fast)
+# Loading work.manager(fast)
+# Loading work.layer(fast)
+# Loading work.sigmoid(fast)
+# Loading work.layer(fast__1)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# Invalid window pattern: do
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
+#           Attempting to use alternate WLF file "./wlft2c9wyd".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft2c9wyd
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
+# ** Note: $stop    : ../projectML/network_tb.sv(91)
+#    Time: 640 ns  Iteration: 0  Instance: /network_tb
+# Break in Module network_tb at ../projectML/network_tb.sv line 91
+do sim.do
+# network_tb
+# projectML
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:04:00 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/manager.sv 
+# -- Compiling module manager
+# 
+# Top level modules:
+# 	manager
+# End time: 21:04:00 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:04:00 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 21:04:00 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:04:00 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/ff_network.sv 
+# -- Compiling module ff_network
+# 
+# Top level modules:
+# 	ff_network
+# End time: 21:04:01 on Apr 01,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:04:01 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/network_tb.sv 
+# -- Compiling module network_tb
+# 
+# Top level modules:
+# 	network_tb
+# End time: 21:04:01 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:04:46 on Apr 01,2025, Elapsed time: 0:01:48
+# Errors: 0, Warnings: 10
+# vsim -voptargs="+acc" work.network_tb 
+# Start time: 21:04:46 on Apr 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "manager(fast)".
+# ** Warning: ../projectML/layer.sv(65): (vopt-2697) LSB -4 of part-select into 'sum_mult' is out of bounds.
+# ** Warning: ../projectML/layer.sv(65): (vopt-2697) LSB -4 of part-select into 'sum_mult' is out of bounds.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.network_tb(fast)
+# Loading work.ff_network(fast)
+# Loading work.manager(fast)
+# Loading work.layer(fast)
+# Loading work.sigmoid(fast)
+# Loading work.layer(fast__1)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# Invalid window pattern: do
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
+#           Attempting to use alternate WLF file "./wlftcvyaqk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftcvyaqk
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
+# ** Note: $stop    : ../projectML/network_tb.sv(91)
+#    Time: 640 ns  Iteration: 0  Instance: /network_tb
+# Break in Module network_tb at ../projectML/network_tb.sv line 91
+do sim.do
+# network_tb
+# projectML
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:07:51 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/manager.sv 
+# -- Compiling module manager
+# 
+# Top level modules:
+# 	manager
+# End time: 21:07:51 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:07:51 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 21:07:52 on Apr 01,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:07:52 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/ff_network.sv 
+# -- Compiling module ff_network
+# 
+# Top level modules:
+# 	ff_network
+# End time: 21:07:52 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:07:52 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/network_tb.sv 
+# -- Compiling module network_tb
+# 
+# Top level modules:
+# 	network_tb
+# End time: 21:07:52 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:09:29 on Apr 01,2025, Elapsed time: 0:04:43
+# Errors: 0, Warnings: 12
+# vsim -voptargs="+acc" work.network_tb 
+# Start time: 21:09:29 on Apr 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "manager(fast)".
+# Loading sv_std.std
+# Loading work.network_tb(fast)
+# Loading work.ff_network(fast)
+# Loading work.manager(fast)
+# Loading work.layer(fast)
+# Loading work.sigmoid(fast)
+# Loading work.layer(fast__1)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# Invalid window pattern: do
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
+#           Attempting to use alternate WLF file "./wlftb0509q".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftb0509q
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
+# ** Note: $stop    : ../projectML/network_tb.sv(91)
+#    Time: 640 ns  Iteration: 0  Instance: /network_tb
+# Break in Module network_tb at ../projectML/network_tb.sv line 91
+do sim.do
+# network_tb
+# projectML
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:18:56 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/manager.sv 
+# -- Compiling module manager
+# 
+# Top level modules:
+# 	manager
+# End time: 21:18:56 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:18:56 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 21:18:56 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:18:56 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/ff_network.sv 
+# -- Compiling module ff_network
+# 
+# Top level modules:
+# 	ff_network
+# End time: 21:18:56 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:18:56 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/network_tb.sv 
+# -- Compiling module network_tb
+# 
+# Top level modules:
+# 	network_tb
+# End time: 21:18:56 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:19:05 on Apr 01,2025, Elapsed time: 0:09:36
+# Errors: 0, Warnings: 10
+# vsim -voptargs="+acc" work.network_tb 
+# Start time: 21:19:05 on Apr 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "manager(fast)".
+# Loading sv_std.std
+# Loading work.network_tb(fast)
+# Loading work.ff_network(fast)
+# Loading work.manager(fast)
+# Loading work.layer(fast)
+# Loading work.sigmoid(fast)
+# Loading work.layer(fast__1)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# Invalid window pattern: do
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
+#           Attempting to use alternate WLF file "./wlft07ni4k".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft07ni4k
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
+# ** Note: $stop    : ../projectML/network_tb.sv(91)
+#    Time: 640 ns  Iteration: 0  Instance: /network_tb
+# Break in Module network_tb at ../projectML/network_tb.sv line 91
+do sim.do
+# network_tb
+# projectML
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:27:16 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/manager.sv 
+# -- Compiling module manager
+# 
+# Top level modules:
+# 	manager
+# End time: 21:27:16 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:27:16 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 21:27:16 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:27:16 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/ff_network.sv 
+# -- Compiling module ff_network
+# 
+# Top level modules:
+# 	ff_network
+# End time: 21:27:16 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:27:16 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/network_tb.sv 
+# -- Compiling module network_tb
+# 
+# Top level modules:
+# 	network_tb
+# End time: 21:27:16 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:27:24 on Apr 01,2025, Elapsed time: 0:08:19
+# Errors: 0, Warnings: 10
+# vsim -voptargs="+acc" work.network_tb 
+# Start time: 21:27:24 on Apr 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "manager(fast)".
+# Loading sv_std.std
+# Loading work.network_tb(fast)
+# Loading work.ff_network(fast)
+# Loading work.manager(fast)
+# Loading work.layer(fast)
+# Loading work.sigmoid(fast)
+# Loading work.layer(fast__1)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# Invalid window pattern: do
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
+#           Attempting to use alternate WLF file "./wlftc3fayv".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftc3fayv
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
+# ** Note: $stop    : ../projectML/network_tb.sv(91)
+#    Time: 640 ns  Iteration: 0  Instance: /network_tb
+# Break in Module network_tb at ../projectML/network_tb.sv line 91
+do sim.do
+# network_tb
+# projectML
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:31:29 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/manager.sv 
+# -- Compiling module manager
+# 
+# Top level modules:
+# 	manager
+# End time: 21:31:29 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:31:29 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 21:31:29 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:31:29 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/ff_network.sv 
+# -- Compiling module ff_network
+# 
+# Top level modules:
+# 	ff_network
+# End time: 21:31:29 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:31:29 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/network_tb.sv 
+# -- Compiling module network_tb
+# 
+# Top level modules:
+# 	network_tb
+# End time: 21:31:30 on Apr 01,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 21:31:42 on Apr 01,2025, Elapsed time: 0:04:18
+# Errors: 0, Warnings: 10
+# vsim -voptargs="+acc" work.network_tb 
+# Start time: 21:31:42 on Apr 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "manager(fast)".
+# Loading sv_std.std
+# Loading work.network_tb(fast)
+# Loading work.ff_network(fast)
+# Loading work.manager(fast)
+# Loading work.layer(fast)
+# Loading work.sigmoid(fast)
+# Loading work.layer(fast__1)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# Invalid window pattern: do
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
+#           Attempting to use alternate WLF file "./wlftb2zsqf".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftb2zsqf
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
+# ** Note: $stop    : ../projectML/network_tb.sv(91)
+#    Time: 640 ns  Iteration: 0  Instance: /network_tb
+# Break in Module network_tb at ../projectML/network_tb.sv line 91
+do sim.do
+# network_tb
+# projectML
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:36:43 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/manager.sv 
+# -- Compiling module manager
+# 
+# Top level modules:
+# 	manager
+# End time: 21:36:43 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:36:43 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 21:36:43 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:36:43 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/ff_network.sv 
+# -- Compiling module ff_network
+# 
+# Top level modules:
+# 	ff_network
+# End time: 21:36:43 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:36:44 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/network_tb.sv 
+# -- Compiling module network_tb
+# 
+# Top level modules:
+# 	network_tb
+# End time: 21:36:44 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:36:58 on Apr 01,2025, Elapsed time: 0:05:16
+# Errors: 0, Warnings: 10
+# vsim -voptargs="+acc" work.network_tb 
+# Start time: 21:36:58 on Apr 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "manager(fast)".
+# Loading sv_std.std
+# Loading work.network_tb(fast)
+# Loading work.ff_network(fast)
+# Loading work.manager(fast)
+# Loading work.layer(fast)
+# Loading work.sigmoid(fast)
+# Loading work.layer(fast__1)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# Invalid window pattern: do
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
+#           Attempting to use alternate WLF file "./wlftcacefn".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftcacefn
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
+# ** Note: $stop    : ../projectML/network_tb.sv(91)
+#    Time: 640 ns  Iteration: 0  Instance: /network_tb
+# Break in Module network_tb at ../projectML/network_tb.sv line 91
+do sim.do
+# network_tb
+# projectML
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:40:05 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/manager.sv 
+# -- Compiling module manager
+# 
+# Top level modules:
+# 	manager
+# End time: 21:40:06 on Apr 01,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:40:06 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 21:40:06 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:40:06 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/ff_network.sv 
+# -- Compiling module ff_network
+# 
+# Top level modules:
+# 	ff_network
+# End time: 21:40:06 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:40:06 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/network_tb.sv 
+# -- Compiling module network_tb
+# 
+# Top level modules:
+# 	network_tb
+# End time: 21:40:06 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:40:26 on Apr 01,2025, Elapsed time: 0:03:28
+# Errors: 0, Warnings: 10
+# vsim -voptargs="+acc" work.network_tb 
+# Start time: 21:40:26 on Apr 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.network_tb(fast)
+# Loading work.ff_network(fast)
+# Loading work.manager(fast)
+# Loading work.layer(fast)
+# Loading work.sigmoid(fast)
+# Loading work.layer(fast__1)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# Invalid window pattern: do
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
+#           Attempting to use alternate WLF file "./wlftexa34y".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftexa34y
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
+# ** Note: $stop    : ../projectML/network_tb.sv(91)
+#    Time: 640 ns  Iteration: 0  Instance: /network_tb
+# Break in Module network_tb at ../projectML/network_tb.sv line 91
+do sim.do
+# network_tb
+# projectML
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:42:33 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/manager.sv 
+# -- Compiling module manager
+# 
+# Top level modules:
+# 	manager
+# End time: 21:42:34 on Apr 01,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:42:34 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 21:42:34 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:42:34 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/ff_network.sv 
+# -- Compiling module ff_network
+# 
+# Top level modules:
+# 	ff_network
+# End time: 21:42:34 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:42:34 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/network_tb.sv 
+# -- Compiling module network_tb
+# 
+# Top level modules:
+# 	network_tb
+# End time: 21:42:34 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:42:53 on Apr 01,2025, Elapsed time: 0:02:27
+# Errors: 0, Warnings: 10
+# vsim -voptargs="+acc" work.network_tb 
+# Start time: 21:42:53 on Apr 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.network_tb(fast)
+# Loading work.ff_network(fast)
+# Loading work.manager(fast)
+# Loading work.layer(fast)
+# Loading work.sigmoid(fast)
+# Loading work.layer(fast__1)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# Invalid window pattern: do
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
+#           Attempting to use alternate WLF file "./wlftrzv27d".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftrzv27d
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
+# ** Note: $stop    : ../projectML/network_tb.sv(91)
+#    Time: 640 ns  Iteration: 0  Instance: /network_tb
+# Break in Module network_tb at ../projectML/network_tb.sv line 91
+do sim.do
+# network_tb
+# projectML
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:47:31 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/manager.sv 
+# -- Compiling module manager
+# 
+# Top level modules:
+# 	manager
+# End time: 21:47:31 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:47:31 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 21:47:31 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:47:31 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/ff_network.sv 
+# -- Compiling module ff_network
+# 
+# Top level modules:
+# 	ff_network
+# End time: 21:47:31 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:47:31 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/network_tb.sv 
+# -- Compiling module network_tb
+# 
+# Top level modules:
+# 	network_tb
+# End time: 21:47:31 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:47:45 on Apr 01,2025, Elapsed time: 0:04:52
+# Errors: 0, Warnings: 10
+# vsim -voptargs="+acc" work.network_tb 
+# Start time: 21:47:45 on Apr 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.network_tb(fast)
+# Loading work.ff_network(fast)
+# Loading work.manager(fast)
+# Loading work.layer(fast)
+# Loading work.sigmoid(fast)
+# Loading work.layer(fast__1)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# Invalid window pattern: do
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
+#           Attempting to use alternate WLF file "./wlft8724wb".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft8724wb
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
+# ** Note: $stop    : ../projectML/network_tb.sv(91)
+#    Time: 640 ns  Iteration: 0  Instance: /network_tb
+# Break in Module network_tb at ../projectML/network_tb.sv line 91
+do sim.do
+# network_tb
+# projectML
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:50:31 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/manager.sv 
+# -- Compiling module manager
+# 
+# Top level modules:
+# 	manager
+# End time: 21:50:32 on Apr 01,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:50:32 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/layer.sv 
+# -- Compiling module layer
+# 
+# Top level modules:
+# 	layer
+# End time: 21:50:32 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:50:32 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/ff_network.sv 
+# -- Compiling module ff_network
+# 
+# Top level modules:
+# 	ff_network
+# End time: 21:50:32 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:50:32 on Apr 01,2025
+# vlog -reportprogress 300 ../projectML/network_tb.sv 
+# -- Compiling module network_tb
+# 
+# Top level modules:
+# 	network_tb
+# End time: 21:50:32 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:50:43 on Apr 01,2025, Elapsed time: 0:02:58
+# Errors: 0, Warnings: 10
+# vsim -voptargs="+acc" work.network_tb 
+# Start time: 21:50:43 on Apr 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "manager(fast)".
+# Loading sv_std.std
+# Loading work.network_tb(fast)
+# Loading work.ff_network(fast)
+# Loading work.manager(fast)
+# Loading work.layer(fast)
+# Loading work.sigmoid(fast)
+# Loading work.layer(fast__1)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (10) for port 'x'. The port definition is at: ../projectML/sigmoid.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o File: ../projectML/layer.sv Line: 65
+# Invalid window pattern: do
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# .main_pane.wave.interior.cs.body.pw.wf .main_pane.schematic.interior.cs.body.pw.df.c .main_pane.source.interior.cs.body.srcobj .main_pane.stackview.interior.cs.body.tb .main_pane.structural.interior.cs.body.structural .main_pane.structure.interior.cs.body.struct
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-ILB9LKJ  ProcessID: 25416
+#           Attempting to use alternate WLF file "./wlftkstq3s".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkstq3s
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_in/loop_l[1]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[0]/sigm_inst_o
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 513 of file "snum.txt". (Current address [512], address range [0:511])    : ../projectML/sigmoid.sv(15)
+#    Time: 0 ps  Iteration: 0  Instance: /network_tb/dut/layer_inst_out/loop_l[1]/sigm_inst_o
+# ** Note: $stop    : ../projectML/network_tb.sv(91)
+#    Time: 640 ns  Iteration: 0  Instance: /network_tb
+# Break in Module network_tb at ../projectML/network_tb.sv line 91
+# End time: 22:06:27 on Apr 01,2025, Elapsed time: 0:15:44
+# Errors: 0, Warnings: 10
